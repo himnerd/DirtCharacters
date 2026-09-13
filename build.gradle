@@ -1,0 +1,4 @@
+// DirtCharacters ships the shared `com.dirt.api` contract, so it depends on
+// nothing else in the suite. Everything else compiles against this project.
+dependencies {
+}

@@ -1,0 +1,46 @@
+name: DirtCharacters
+main: com.dirt.characters.DirtCharacters
+version: '${version}'
+author: nerdianMC
+description: Characters, identity, families, mail, contracts and fast travel — the core of the Dirt suite.
+api-version: '26.2'
+folia-supported: true
+depend: [Vault]
+softdepend: [floodgate, Essentials]
+
+permissions:
+  dirtcharacters.reload:
+    description: Reload DirtCharacters configuration and caches
+    default: op
+  dirtcharacters.admin:
+    description: Administer any character
+    default: op
+
+commands:
+  dirtcharacters:
+    description: DirtCharacters admin commands
+    usage: /dirtcharacters reload
+    permission: dirtcharacters.reload
+    aliases: [dchars]
+  dc:
+    description: Character management
+    usage: /dc [create|bal|contract|admin]
+    aliases: [dirtc, character, char]
+  did:
+    description: View character ID cards
+    usage: /did [view <player>]
+    aliases: [dirtid, id]
+  menu:
+    description: Open your player dashboard
+    usage: /menu
+    aliases: [profile, dashboard]
+  sethome:
+    description: Set your home waypoint
+    usage: /sethome
+  home:
+    description: Teleport to your home waypoint
+    usage: /home
+  fasttravel:
+    description: Open the fast travel menu
+    usage: /fasttravel
+    aliases: [ft]

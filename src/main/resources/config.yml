@@ -1,0 +1,80 @@
+# ============================================================
+#            DirtCharacters — Configuration
+# ============================================================
+# The character core of the Dirt suite: identities, families,
+# mail, contracts, inheritance and fast travel.
+#
+# Apply changes with /dirtcharacters reload.
+# ============================================================
+
+# ────────────────────────────
+#   Character System
+# ────────────────────────────
+character:
+  # Cost to change your character's name (0 for free)
+  name-change-cost: 100000.0
+
+  # Ticks to wait before opening character creation after a death
+  death-respawn-delay-ticks: 10
+
+  # Ticks to wait after a player joins before checking character status
+  join-delay-ticks: 20
+
+  # Daily login reward amount (0 to disable)
+  daily-login-reward: 500.0
+
+  bios:
+    # Allow players and integrations to set character biographies.
+    enabled: true
+    # Maximum number of characters stored in a biography.
+    max-length: 500
+
+# ────────────────────────────
+#   Family System
+# ────────────────────────────
+family:
+  # Set to false to disable marriage, divorce and children entirely
+  enabled: true
+
+  # Cost to send a marriage request
+  marriage-cost: 1000.0
+
+  # Payout to the spouse when filing for divorce
+  divorce-payout: 1000.0
+
+  # Minimum days a character must exist before they can marry
+  marriage-eligibility-days: 30
+
+# ────────────────────────────
+#   Inheritance
+# ────────────────────────────
+inheritance:
+  # Place a protected chest with the deceased's belongings for their inheritor.
+  # When false, the inventory is cleared on death instead.
+  chest-enabled: true
+
+# ────────────────────────────
+#   Contracts
+# ────────────────────────────
+contracts:
+  # Set to false to disable the contract system entirely
+  enabled: true
+
+  # Cost to obtain a paper copy of a signed contract
+  paper-copy-cost: 500.0
+
+# ────────────────────────────
+#   Fast Travel
+# ────────────────────────────
+# Right-click a lit campfire holding an ender pearl to create a public
+# travel point. DirtNations and DirtBiz add their own destination
+# categories when they are installed.
+fast-travel:
+  enabled: true
+
+# ────────────────────────────
+#   DirtHands (Physical Combat)
+# ────────────────────────────
+dirthands:
+  # Reserves hotbar slot 9 as an empty "bare hands" slot
+  enabled: true
